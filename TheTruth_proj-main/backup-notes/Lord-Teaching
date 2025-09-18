@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lord Teaching Galery
+        </title>
+        <link rel="stylesheet" href="styles-Lord-Teaching.css">
+        <script src="https://kit.fontawesome.com/b13e7528ce.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="icons/cross-solid.svg">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <i class="fa-solid fa-cross"></i>
+            </a>
+            <h1>
+                Lord's Teaching
+            </h1>
+        </header>
+        <section class="welcome">
+            <img src="img/Lord-Jesus-Teaching.jpg" alt="Lord Jesus Teachs Praying">
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Lord-Miracles.html">Miracles</a></li>
+                <li><a href="Lord-Teaching.html" class="active">Teaching</a></li>
+                <li><a href="Hymn.html">Hymn</a></li>
+                <li class="right"><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-praying.html">
+                <img src="img/Lord-Praying.jpg" alt="Lord Prayed In The Garden">
+            </a>
+            <div class="desc">Lord Jesus Teachs Praying</div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-The-Beatitudes.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">The Beatitudes</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Salt-And-Light.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Salt and Light</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-The-Fulfillment-Of-The-Law.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">The Fulfillment Of The Law</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Anger.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Anger</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Adultery.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Adultery</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Divorce.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Divorce</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Do-Not-Resist-Evil.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Do Not Resist Evil</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Love-Your-Enemies.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Love Your Enemies</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Giving-To-The-Needy.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Giving To The Needy</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Prayer.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Prayer</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Fasting.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Fasting</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Treasures-In-Heaven.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Treasures In Heaven</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-The-Light-Of-Body-Is-The-Eye.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">The Light Of Body Is The Eye</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Serve-The-Lord.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Serve The Lord</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Do-Not-Worry.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Do Not Worry</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Judge-Not.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Judge Not</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Do-Not-Give-Dogs-What-Is-Sacred.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Do Not Give Dogs What Is Sacred</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Ask-Seek-Knock.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Ask, Seek, Knock</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-Golden-Rule.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">Golden Rule</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-The-Narrow-And-Wide-Gates.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">The Narrow And Wide Gates</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-True-And-False-Prophets.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">True And False Prophets</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sermon-On-The-Mount-True-And-False-Disciples.html">
+                <img src="img/The-Sermon-On-The-Mount.jpg" alt="The Sermon On The Mount">
+            </a>
+            <div class="desc">The Sermon On The Mount: <strong style="color: gold;">True And False Disciples</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Cost-Of-Following-Lord-Jesus.html">
+                <img src="img/The-Cost-Of-Following-Lord-Jesus.jpg" alt="The Cost Of Following Lord Jesus">
+            </a>
+            <div class="desc">The Cost Of Following Lord Jesus</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-I-Will-Have-Mercy-And-Not-Sacrifice.html">
+                <img src="img/I-Will-Have-Mercy-And-Not-Sacrifice.jpg" alt="I Will Have Mercy, And Not Sacrifice">
+            </a>
+            <div class="desc">"I Will Have Mercy, And Not Sacrifice" - Lord Jesus</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-Lord-Jesus-Questioned-About-Fasting.html">
+                <img src="img/Lord-Jesus-Questioned-About-Fasting.jpg" alt="Lord Jesus Questioned About Fasting">
+            </a>
+            <div class="desc">Lord Jesus Questioned About Fasting</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Workers-Are-Few.html">
+                <img src="img/The-Workers-Are-Few.jpg" alt="The Workers Are Few">
+            </a>
+            <div class="desc">The Workers Are Few</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-Lord-Jesus-Sends-Out-The-Twelve.html">
+                <img src="img/Lord-Jesus-Sends-Out-The-Twelve.jpg" alt="Lord Jesus Sends Out The Twelve">
+            </a>
+            <div class="desc">Lord Jesus Sends Out The Twelve</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-Persecution-Will-Come.html">
+                <img src="img/Persecution-Will-Come.jpg" alt="Persecution Will Come">
+            </a>
+            <div class="desc">Persecution Will Come</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-Fear-God-Not-Man.html">
+                <img src="img/Fear-God-Not-Man.jpg" alt="Fear God, Not Man">
+            </a>
+            <div class="desc">Fear God, Not Man</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-Dont-Be-Ashamed-Of-Your-Faith.html">
+                <img src="img/Dont-Be-Ashamed-Of-Your-Faith.jpg" alt="Don't Be Ashamed Of Your Faith">
+            </a>
+            <div class="desc">Don't Be Ashamed Of Your Faith</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-Not-Peace-But-A-Sword.html">
+                <img src="img/Not-Peace-But-A-Sword.jpg" alt="Not Peace, But A Sword">
+            </a>
+            <div class="desc">Not Peace, But A Sword</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-Rewards.html">
+                <img src="img/Rewards.jpg" alt="Rewards">
+            </a>
+            <div class="desc">Rewards</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Father-Revealed-In-The-Son.html">
+                <img src="img/The-Father-Revealed-In-The-Son.jpg" alt="The Father Revealed In The Son">
+            </a>
+            <div class="desc">The Father Revealed In The Son</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-I-Will-Give-You-Rest.html">
+                <img src="img/I-Will-Give-You-Rest.jpg" alt="I Will Give You Rest">
+            </a>
+            <div class="desc">"I Will Give You Rest" - Lord Jesus</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-Lord-Jesus-Is-Lord-Of-The-Sabbath.html">
+                <img src="img/Lord-Jesus-Is-Lord-Of-The-Sabbath.jpg" alt="Lord Jesus Is Lord Of The Sabbath">
+            </a>
+            <div class="desc">Lord Jesus Is Lord Of The Sabbath</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-Gods-Chosen-Servant.html">
+                <img src="img/Gods-Chosen-Servant.jpg" alt="God’s Chosen Servant">
+            </a>
+            <div class="desc">God’s Chosen Servant</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-Do-Not-Speaketh-Blasphemy-Against-The-Holy-Spirit.html">
+                <img src="img/Do-Not-Speaketh-Blasphemy-Against-The-Holy-Spirit.jpg" alt="Do Not Speaketh Blasphemously Against The Holy Spirit">
+            </a>
+            <div class="desc">Do Not Speaketh Blasphemously Against The Holy Spirit</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-A-Tree-Is-Known-By-Its-Fruit.html">
+                <img src="img/A-Tree-Is-Known-By-Its-Fruit.jpg" alt="A Tree Is Known By Its Fruit">
+            </a>
+            <div class="desc">A Tree Is Known By Its Fruit</div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Sign-Of-Jonah.html">
+                <img src="img/The-Sign-Of-Jonah.jpg" alt="The Sign Of Jonah">
+            </a>
+            <div class="desc">The Sign Of Jonah</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-An-Unclean-Spirit-Returns.html">
+                <img src="img/An-Unclean-Spirit-Returns.jpg" alt="An Unclean Spirit Returns">
+            </a>
+            <div class="desc">An Unclean Spirit Returns</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-Lord-Jesuss-Mother-And-Brothers.html">
+                <img src="img/Lord-Jesuss-Mother-And-Brothers.jpg" alt="Lord Jesus's Mother And Brothers">
+            </a>
+            <div class="desc">Lord Jesus's Mother And Brothers</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Parable-Of-The-Sower.html">
+                <img src="img/The-Parable-Of-The-Sower.jpg" alt="The Parable Of The Sower">
+            </a>
+            <div class="desc">The Parable Of The Sower</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Parable-Of-The-Weeds.html">
+                <img src="img/The-Parable-Of-The-Weeds.jpg" alt="The Parable Of The Weeds">
+            </a>
+            <div class="desc">The Parable Of The Weeds</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Parable-Of-The-Mustard-Seed.html">
+                <img src="img/The-Parable-Of-The-Mustard-Seed.jpg" alt="The Parable Of The Mustard Seed">
+            </a>
+            <div class="desc">The Parable Of The Mustard Seed</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Parable-Of-The-Yeast.html">
+                <img src="img/The-Parable-Of-The-Yeast.jpg" alt="The Parable Of The Yeast">
+            </a>
+            <div class="desc">The Parable Of The Yeast</strong></div>
+        </div>  
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Parable-Of-The-Hidden-Treasure-And-The-Pearl.html">
+                <img src="img/The-Parable-Of-The-Hidden-Treasure-And-The-Pearl.jpg" alt="The Parable Of The Hidden Treasure And The Pearl">
+            </a>
+            <div class="desc">The Parable Of The Hidden Treasure And The Pearl</strong></div>
+        </div>
+
+        <div class="galery">
+            <a href="teaching/index-teaching-The-Parable-Of-The-Net.html">
+                <img src="img/The-Parable-Of-The-Net.jpg" alt="The Parable Of The Net">
+            </a>
+            <div class="desc">The Parable Of The Net</strong></div>
+        </div>  
+
+        <div class="galery">
+            <a href="teaching/index-teaching-Why-Did-Lord-Jesus-Speak-To-The-People-In-Parables.html">
+                <img src="img/Why-Did-Lord-Jesus-Speak-To-The-People-In-Parables.jpg" alt="Why Did Lord Jesus Speak To The People In Parables?">
+            </a>
+            <div class="desc">Why Did Lord Jesus Speak To The People In Parables?</strong></div>
+        </div>  
+
+        <div class="clearfix"></div>
+
+        <section class="form-input">
+            <h2>Thank you for your visiting!</h2>
+            <form action="">
+                <label for="email">Type your email and hit Enter to join us: </label>
+                <input type="email" id="email" name="email" placeholder="your email ...">
+            </form>
+        </section>
+
+        <footer>
+            &copy;2024 Copyright Nguyen Van Huy. All rights reserved.
+        </footer>
+
+        <audio controls autoplay controlsList="nodownload noplaybackrate">
+            <source src="audios/SheepMaySafelyGraze.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </body>
+</html>

@@ -1,0 +1,522 @@
+:root{
+    --gold-color: #E5B80B;
+    --dark-gold-color: #B59410;
+    --light-gold-color: #FDDC5C;
+    --silver-color: #BCC6CC;
+    --black-silver-color: #737474;
+    --blue-sky-color: #74C0FC;
+    --blood-color: #8A0303;
+    --red-neon-color: #FF3131;
+    --green-color: #72BF6A;
+    --dark-green-color: #006400;
+    --light-green-color: #90EE90;
+    --snow-white-color: #F5F4EF;
+    --dark-cream-color: #CCC7B3;
+    --dark-blue-color: #00008B;
+    --light-black-color: #2C2D2D;
+    --passion-purple-color: #632958;
+    --header-top: 97px;
+    --header-top-res-900px: 87px;
+    --header-top-res-600px: 74px;
+    /* --header-top-res-900px: 97px;
+    --header-top-res-600px: 97px; */
+}
+
+body, h1, h2, p{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: var(--header-top);
+    background-color: var(--green-color);
+    background-image: linear-gradient(var(--dark-green-color), var(--light-green-color));
+}
+
+
+/* Header */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    background-color: var(--blue-sky-color);
+}
+
+header a{
+    width: 40%;
+    text-align: right;
+    font-size: 50px;
+    margin-right: 5%;
+    color: var(--gold-color);
+    text-shadow: white 3px 3px;
+}
+
+header a i{
+    transition: transform 700ms;
+}
+
+header a i:hover{
+    transform: scale(1.5, 1.5);
+}
+
+header h1{
+    width: 60%;
+    color: var(--blood-color);
+    text-shadow: white 3px 3px;
+    font-size: 50px;
+}
+
+/* Welcome */
+section.welcome{
+    background-color: #3B4340;
+}
+
+section.welcome img{
+    width: 100%;
+}
+
+/* Galery Stories */
+div.galery{
+    float: left;
+    width: 23%;
+    margin: 30px 1%;
+    border: 5px solid var(--gold-color);
+    border-radius: 10px;
+    background-color: var(--blue-sky-color);
+    height: 350px;
+    transition: transform 2s 500ms;
+}
+
+div.galery img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+div.galery:hover{
+    border: 5px solid var(--silver-color);
+    /* Neon Box Shadow */
+    box-shadow: crimson 5px 5px 5px;
+    transform: rotateY(360deg);
+    background-image: linear-gradient(to right, var(--green-color), var(--light-gold-color), var(--blue-sky-color));
+}
+
+div.galery a:hover{
+    opacity: 0.5;
+}
+
+div.galery div.desc{
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* Clear Fix */
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Navigation */
+nav{
+    position: sticky;
+    top: var(--header-top);
+    z-index: 2;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: darkcyan;
+    padding: 0 5%;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--gold-color);
+    font-size: 20px;
+    font-weight: 700;
+    color: lawngreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav ul li.right{
+    float: right;
+}
+
+nav ul li a.active{
+    background-color: var(--silver-color);
+    color: lawngreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-radius: 0 20px 0 20px;
+}
+
+nav ul li a:hover{
+    background-color: var(--gold-color);
+    color: white;
+    border-radius: 20px 0 20px 0;
+}
+
+/* Pagination */
+section.pagination{
+    text-align: center;
+}
+
+section.pagination section.pagination-element{
+    display: inline-block;
+}
+
+section.pagination section.pagination-element a{
+    float: left;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 8px 16px;
+    border-radius: 10px;
+    color: var(--blood-color);
+}
+
+section.pagination section.pagination-element a.active{
+    background-color: var(--red-neon-color);
+    color: white;
+}
+
+section.pagination section.pagination-element a:hover:not(a.active){
+    background-color: var(--blue-sky-color);
+}
+
+/* Form */
+section.form-input{
+    padding: 20px;
+    text-align: center;
+    background-color: beige;
+}
+
+section.form-input h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 0 10px;
+}
+
+section.form-input label, section.form-input input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+section.form-input input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 30%;
+    border: 1px solid var(--gold-color);
+    border-radius: 10px;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--blue-sky-color);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+::selection{
+    color: crimson;
+    background-color: var(--gold-color);
+}
+
+audio{
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 40%;
+    width: 100px;
+    opacity: 0.5;
+    height: 40px;
+    z-index: 3;
+}
+
+audio::-webkit-media-controls-timeline{
+    display: none;
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: var(--gold-color);
+}
+
+audio:hover{
+    width: 150px;
+    opacity: 1;
+}
+
+audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px){
+    div.galery div.desc{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    div.galery{
+        width: 30%;
+        margin: 30px 1.6667%;
+    }
+
+    div.galery div.desc{
+        font-size: 15px;
+    }
+
+    /* Pagination */
+    section.pagination section.pagination-element a{
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    div.galery div.desc{
+        font-size: 14.5px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    body{
+        margin-top: var(--header-top-res-900px);
+    }
+
+    /* header */
+    header a{
+        font-size: 40px;
+        width: 35%;
+    }
+    
+    header h1{
+        font-size: 30px;
+        width: 65%;
+    }
+
+    /* Galery */
+    div.galery{
+        width: 46%;
+        margin: 30px 2%;
+    }
+
+    div.galery div.desc{
+        font-size: 16px;
+    }
+
+    /* navigation */
+    nav{
+        top: var(--header-top-res-900px);
+    }
+    
+    nav ul{
+        padding: 0 3%;
+    }
+
+    nav ul li a{
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    nav ul li a.active{
+        border-radius: 0 15x 0 15px;
+    }
+    
+    nav ul li a:hover{
+        border-radius: 15px 0 15px 0;
+    }
+
+    /* Pagination */
+    section.pagination section.pagination-element a{
+        font-size: 20px;
+    }
+
+    /* Form */
+    section.form-input{
+        padding: 15px;
+    }
+
+    section.form-input h2{
+        font-size: 20px;
+        margin: 0 0 8px;
+    }
+
+    section.form-input label, section.form-input input{
+        font-size: 15px;
+        display: block;
+        margin: 5px auto;
+    }
+
+    section.form-input input{
+        width: 35%;
+        border-radius: 8px;
+    }
+
+    /* Footer */
+    footer{
+        padding: 8px 0;
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        margin-top: var(--header-top-res-600px);
+    }
+
+    /* header */
+    header a{
+        font-size: 30px;
+        width: 35%;
+    }
+    
+    header h1{
+        width: 65%;
+        font-size: 20px;
+    }
+    
+    /* Galery */
+    div.galery{
+        width: 92%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    /* navigation */
+    nav{
+        top: var(--header-top-res-600px);
+    }
+    
+    nav ul{
+        padding: 0;
+    }
+
+    nav ul li a{
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    nav ul li{
+        /* float: none; */
+        width: 50%;
+        text-align: center;
+        border-bottom: 2px solid var(--green-color);
+    }
+
+    nav ul li a{
+        border-right: 2px solid var(--green-color);
+    }
+
+    nav ul li a[href="index.html"], nav ul li a[href="Lord-Teaching.html"], nav ul li a[href="about-us.html"]{
+        border-left: 2px solid var(--green-color);
+    }
+
+    nav ul li a[href="index.html"], nav ul li a[href="Lord-Miracles.html"]{
+        border-top: 2px solid var(--green-color);
+    }
+    
+    nav ul li.right{
+        /* float: none; */
+        width: 100%;
+    }
+    
+    nav ul li a.active{
+        border-radius: 0;
+    }
+    
+    nav ul li a:hover{
+        border-radius: 0;
+    }
+
+    /* Pagination */
+    section.pagination section.pagination-element a{
+        font-size: 16px;
+    }
+
+    /* Form */
+    section.form-input{
+        padding: 10px;
+    }
+
+    section.form-input h2{
+        font-size: 15px;
+        margin: 0 0 8px;
+    }
+
+    section.form-input label, section.form-input input{
+        font-size: 13px;
+    }
+
+    section.form-input input{
+        width: 50%;
+        border-radius: 8px;
+    }
+
+    /* Footer */
+    footer{
+        padding: 5px 0;
+        font-weight: 400;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    /* header */
+    header a{
+        font-size: 30px;
+        width: 30%;
+    }
+    
+    header h1{
+        width: 70%;
+        font-size: 20px;
+    }
+
+    /* Form */
+    section.form-input input{
+        width: 80%;
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    /* header */
+    header a{
+        font-size: 30px;
+        width: 25%;
+    }
+    
+    header h1{
+        width: 75%;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,680 @@
+:root{
+    --gold-color: #E5B80B;
+    --dark-gold-color: #B59410;
+    --light-gold-color: #FDDC5C;
+    --silver-color: #BCC6CC;
+    --black-silver-color: #737474;
+    --blue-sky-color: #74C0FC;
+    --blood-color: #8A0303;
+    --red-neon-color: #FF3131;
+    --green-color: #72BF6A;
+    --dark-green-color: #006400;
+    --light-green-color: #90EE90;
+    --snow-white-color: #F5F4EF;
+    --dark-cream-color: #CCC7B3;
+    --dark-blue-color: #00008B;
+    --light-black-color: #2C2D2D;
+    --passion-purple-color: #632958;
+    --header-top: 97px;
+    --header-top-res-900px: 87px;
+    --header-top-res-600px: 74px;
+    /* --header-top-res-900px: 97px;
+    --header-top-res-600px: 97px; */
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--snow-white-color);
+    background-image: linear-gradient(var(--gold-color), var(--blue-sky-color), var(--light-green-color));
+}
+
+body, h1, h2, h3, h5, p{
+    margin: 0;
+    padding: 10px;
+}
+
+/* Header */
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    background-color: var(--blue-sky-color);
+    border-radius: 10px 10px 0 0;
+}
+
+header a{
+    width: 43%;
+    text-align: right;
+    font-size: 50px;
+    margin-right: 5%;
+    color: var(--gold-color);
+    text-shadow: white 3px 3px;
+}
+
+header a i{
+    transition: transform 700ms;
+}
+
+header a i:hover{
+    transform: scale(1.5, 1.5);
+}
+
+header h1{
+    width: 57%;
+    color: var(--blood-color);
+    text-shadow: white 3px 3px;
+    font-size: 50px;
+}
+
+/* Navigation */
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: darkcyan;
+    padding: 0 5%;
+    border-radius: 0 0 10px 10px;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--silver-color);
+    font-size: 20px;
+    font-weight: 700;
+    color: lawngreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav ul li.right{
+    float: right;
+}
+
+nav ul li a.active{
+    background-color: var(--silver-color);
+    color: lawngreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-radius: 0 20px 0 20px;
+}
+
+nav ul li a:hover{
+    background-color: var(--gold-color);
+    color: white;
+    border-radius: 20px 0 20px 0;
+}
+
+/* main */
+main{
+    background-image: linear-gradient(to right bottom, var(--red-neon-color), var(--gold-color), var(--green-color));
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+main .title-tooltip{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+main .title-tooltip .title-tooltip-text{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    width: fit-content;
+    visibility: hidden;
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, var(--dark-cream-color), var(--silver-color), var(--blue-sky-color));
+    z-index: 1;
+}
+
+main .title-tooltip .title-tooltip-text::after{
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent var(--dark-cream-color) transparent;
+}
+
+main .title-tooltip:hover .title-tooltip-text{
+    visibility: visible;
+}
+
+main section.library{
+    width: 30%;
+    border-right: 3px solid;
+}
+
+main section.hymns{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main section.library h1, main section.hymns h1{
+    color: var(--light-gold-color);
+    font-size: 35px;
+}
+
+main section.library h2, main section.hymns h2{
+    color: var(--dark-green-color);
+    font-size: 25px;
+}
+
+main section.library article.library-famous-hymns > a, main section.library article.library-our-composed-hymns > a{
+    display: block;
+    text-decoration: none;
+    margin: 10px 35px;
+    color: var(--snow-white-color);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+main section.library article.library-famous-hymns > a:hover, main section.library article.library-our-composed-hymns > a:hover{
+    color: var(--dark-blue-color);
+    background-color: var(--dark-gold-color);
+    width: fit-content;
+    border-radius: 7px;
+}
+
+/* main section.hymns */
+main section.hymns h1{
+    color: var(--snow-white-color);
+    font-size: 40px;
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+}
+
+main section.hymns article.hymn-running{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.hymns article.hymn-running img{
+    width: 30%;
+}
+
+/* Toggle the disk animation rotation */
+.image-animation-360deg{
+    animation-name: disk-animation-360deg;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes disk-animation-360deg{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+main section.hymns article.hymn-running article.hymn-running-playing{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main section.hymns article.hymn-running article.hymn-running-playing button.button-playing{
+    display: block;
+    width: 20%;
+    height: 54px;
+    border-radius: 40px;
+    margin: 0 0.5%;
+    background-color: var(--snow-white-color);
+    border: transparent;
+    font-size: 1.1em;
+}
+
+main section.hymns article.hymn-running article.hymn-running-playing button.button-playing:hover{
+    background-color: var(--green-color);
+}
+
+main section.hymns article.hymn-running article.hymn-running-playing button.button-playing span{
+    position: relative;
+    transition: 0.5s;
+}
+
+main section.hymns article.hymn-running article.hymn-running-playing button.button-playing span::after{
+    position: absolute;
+    content: '\00bb';
+    opacity: 0;
+    transition: 0.5s;
+}
+
+main section.hymns article.hymn-running article.hymn-running-playing button.button-playing:hover span{
+    padding-right: 10%;
+}
+
+main section.hymns article.hymn-running article.hymn-running-playing button.button-playing:hover span::after{
+    opacity: 1;
+    padding-left: 10%;
+}
+
+main section.hymns article.hymn-running article.hymn-running-playing audio{
+    display: block;
+    width: 78%;
+    display: block;
+    margin: 0 0.5%;
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: var(--snow-white-color);
+}
+
+audio::-webkit-media-controls-play-button{
+    display: none;
+}
+
+/* main section.hymns */
+main section.hymns article.hymn-information{
+    padding-left: 20px;
+}
+
+main section.hymns article.hymn-information h2{
+    color: var(--light-black-color);
+    font-size: 20px;
+}
+
+main section.hymns article.hymn-information h2 span{
+    color: var(--snow-white-color);
+}
+
+main section.hymns article.hymn-information h2 span a{
+    text-decoration: none;
+    color: var(--snow-white-color);
+}
+
+main section.hymns article.hymn-running::after, main::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Form */
+section.form-input{
+    padding: 20px;
+    text-align: center;
+    background-color: beige;
+    border-radius: 10px 10px 0 0;
+    margin-top: 10px;
+    border-top: 3px solid var(--dark-cream-color);
+    border-right: 3px solid var(--dark-cream-color);
+    border-left: 3px solid var(--dark-cream-color);
+}
+
+section.form-input h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 0 10px;
+}
+
+section.form-input label, section.form-input input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+section.form-input input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 30%;
+    border: 1px solid var(--gold-color);
+    border-radius: 10px;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--blue-sky-color);
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 0 0 10px 10px;
+    border-left: 3px solid var(--dark-blue-color);
+    border-right: 3px solid var(--dark-blue-color);
+    border-bottom: 3px solid var(--dark-blue-color);
+}
+
+::selection{
+    color: var(--gold-color);
+    background-color: var(--snow-white-color);
+}
+
+@media only screen and (max-width: 1100px){    
+    main section.library{
+        width: 35%;
+    }
+    
+    main section.hymns{
+        width: 65%;
+    }
+    
+    main section.library h1, main section.hymns h1{
+        font-size: 30px;
+    }
+    
+    main section.library h2, main section.hymns h2{
+        font-size: 25px;
+    }
+    
+    main section.library article.library-famous-hymns > a, main section.library article.library-our-composed-hymns > a{
+        margin: 10px 25px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    header a{
+        font-size: 40px;
+        width: 45%;
+    }
+    
+    header h1{
+        font-size: 30px;
+        width: 55%;
+    }
+
+    /* navigation */
+    nav{
+        top: var(--header-top-res-900px);
+    }
+    
+    nav ul{
+        padding: 0 3%;
+    }
+
+    nav ul li a{
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    nav ul li a.active{
+        border-radius: 0 15x 0 15px;
+    }
+    
+    nav ul li a:hover{
+        border-radius: 15px 0 15px 0;
+    }
+
+    /* main */
+    main{
+        border-radius: 10px;
+    }
+    
+    main section.library{
+        width: 50%;
+    }
+    
+    main section.hymns{
+        width: 50%;
+    }
+    
+    main section.library h1, main section.hymns h1{
+        font-size: 30px;
+    }
+    
+    main section.library h2, main section.hymns h2{
+        font-size: 20px;
+    }
+    
+    main section.library article.library-famous-hymns > a, main section.library article.library-our-composed-hymns > a{
+        margin: 10px 20px;
+        font-size: 18px;
+    }
+    
+    /* main section.hymns */
+    main section.hymns h1{
+        font-size: 30px;
+    }
+    
+    main section.hymns article.hymn-running{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    main section.hymns article.hymn-running img{
+        width: 80%;
+    }
+    
+    /* Toggle the disk animation rotation */
+    .image-animation-360deg{
+        animation-name: disk-animation-360deg;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+    }
+    
+    @keyframes disk-animation-360deg{
+        from{
+            transform: rotate(0deg);
+        }
+    
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    
+    main section.hymns article.hymn-running article.hymn-running-playing{
+        display: block;
+        width: 100%;
+    }
+    
+    main section.hymns article.hymn-running article.hymn-running-playing button.button-playing{
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    main section.hymns article.hymn-running article.hymn-running-playing audio{
+        width: 100%;
+    }
+
+    /* main section.hymns */
+    main section.hymns article.hymn-information h2{
+        color: var(--light-black-color);
+        font-size: 18px;
+    }
+
+    main section.hymns article.hymn-running::after, main::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Form */
+    section.form-input{
+        padding: 15px;
+    }
+
+    section.form-input h2{
+        font-size: 20px;
+        margin: 0 0 8px;
+    }
+
+    section.form-input label, section.form-input input{
+        font-size: 15px;
+        display: block;
+        margin: 5px auto;
+    }
+
+    section.form-input input{
+        width: 35%;
+        border-radius: 8px;
+    }
+
+    /* Footer */
+    footer{
+        padding: 8px 0;
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    header a{
+        font-size: 30px;
+        width: 40%;
+    }
+    
+    header h1{
+        width: 60%;
+        font-size: 20px;
+    }
+
+    /* navigation */
+    nav{
+        top: var(--header-top-res-600px);
+    }
+    
+    nav ul{
+        padding: 0;
+    }
+
+    nav ul li a{
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    nav ul li{
+        float: none;
+        text-align: center;
+    }
+    
+    nav ul li.right{
+        float: none;
+    }
+    
+    nav ul li a.active{
+        border-radius: 0;
+    }
+    
+    nav ul li a:hover{
+        border-radius: 0;
+    }
+
+    /* main */
+    main{
+        border-radius: 10px;
+        display: block;
+    }
+    
+    main section.library{
+        width: 100%;
+        border-right: none;
+        border-bottom: solid 3px;
+    }
+    
+    main section.hymns{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    main section.library h1, main section.hymns h1{
+        font-size: 30px;
+    }
+    
+    main section.library h2, main section.hymns h2{
+        font-size: 20px;
+    }
+    
+    main section.library article.library-famous-hymns > a, main section.library article.library-our-composed-hymns > a{
+        margin: 10px 20px;
+        font-size: 18px;
+    }
+    
+    /* main section.hymns */
+    main section.hymns h1{
+        font-size: 30px;
+    }
+    
+    main section.hymns article.hymn-running{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    main section.hymns article.hymn-running img{
+        width: 80%;
+    }
+
+    /* main section.hymns */
+    main section.hymns article.hymn-information h2{
+        color: var(--light-black-color);
+        font-size: 17px;
+    }
+
+    main section.hymns article.hymn-running::after, main::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Form */
+    section.form-input{
+        padding: 10px;
+    }
+
+    section.form-input h2{
+        font-size: 15px;
+        margin: 0 0 8px;
+    }
+
+    section.form-input label, section.form-input input{
+        font-size: 13px;
+    }
+
+    section.form-input input{
+        width: 40%;
+        border-radius: 8px;
+    }
+
+    /* Footer */
+    footer{
+        padding: 5px 0;
+        font-weight: 400;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    /* Form */
+    section.form-input input{
+        width: 80%;
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,1132 @@
+:root{
+    --gold-color: #E5B80B;
+    --dark-gold-color: #B59410;
+    --light-gold-color: #FDDC5C;
+    --silver-color: #BCC6CC;
+    --black-silver-color: #737474;
+    --blue-sky-color: #74C0FC;
+    --blood-color: #8A0303;
+    --red-neon-color: #FF3131;
+    --green-color: #72BF6A;
+    --dark-green-color: #006400;
+    --light-green-color: #90EE90;
+    --snow-white-color: #F5F4EF;
+    --dark-cream-color: #CCC7B3;
+    --dark-blue-color: #00008B;
+    --light-black-color: #2C2D2D;
+    --passion-purple-color: #632958;
+    --header-top: 97px;
+    --header-top-res-900px: 87px;
+    --header-top-res-600px: 74px;
+    /* --header-top-res-900px: 97px;
+    --header-top-res-600px: 97px; */
+}
+
+
+body, h1, h2, h3, h5, p{
+    margin: 0;
+    padding: 10px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--snow-white-color);
+}
+
+
+/* Header */
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    background-color: var(--blue-sky-color);
+    border-radius: 10px 10px 0 0;
+
+    /* Animation for Header after loading the page */
+    /* animation-name: animation-header; */
+    animation-delay: 500ms;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes animation-header{
+    0%{
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    5%{
+        position: fixed;
+        width: 100%;
+        height: 150px;
+        z-index: 2;
+    }
+
+    10%{
+        position: fixed;
+        width: 100%;
+        height: 250px;
+        z-index: 2;
+    }
+
+    15%{
+        position: fixed;
+        width: 100%;
+        height: 300px;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    20%{
+        position: fixed;
+        width: 400px;
+        height: 400px;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        border-radius: 30%; 
+        border: 10px solid var(--gold-color);
+        background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+        transform: translate(-50%, -50%);
+    }
+
+    30%, 40%, 50%, 60%, 70%{
+        position: fixed;
+        width: 400px;
+        height: 400px;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        border-radius: 50%; 
+        border: 10px solid var(--gold-color);
+        background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+        transform: translate(-50%, -50%);
+    }
+
+    80%{
+        position: fixed;
+        width: 400px;
+        height: 400px;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        border-radius: 30%; 
+        border: 10px solid var(--gold-color);
+        background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+        transform: translate(-50%, -50%);
+    }
+
+    85%{
+        position: fixed;
+        width: 100%;
+        height: 300px;
+        z-index: 2;
+    }
+
+    90%{
+        position: fixed;
+        width: 100%;
+        height: 250px;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    95%{
+        position: fixed;
+        width: 100%;
+        height: 150px;
+        z-index: 2;
+    }
+
+    100%{
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+}
+
+header a{
+    width: 43%;
+    text-align: right;
+    font-size: 50px;
+    margin-right: 5%;
+    color: var(--gold-color);
+    text-shadow: white 3px 3px;
+}
+
+header a i{
+    transition: transform 700ms;
+}
+
+header a i:hover{
+    transform: scale(1.5, 1.5);
+}
+
+header h1{
+    width: 57%;
+    color: var(--blood-color);
+    text-shadow: white 3px 3px;
+    font-size: 50px;
+}
+
+/* Navigation */
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: darkcyan;
+    padding: 0 5%;
+    border-radius: 0 0 10px 10px;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--silver-color);
+    font-size: 20px;
+    font-weight: 700;
+    color: lawngreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav ul li.right{
+    float: right;
+}
+
+nav ul li a.active{
+    background-color: var(--silver-color);
+    color: lawngreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-radius: 0 20px 0 20px;
+}
+
+nav ul li a:hover{
+    background-color: var(--gold-color);
+    color: white;
+    border-radius: 20px 0 20px 0;
+}
+
+/* main */
+main{
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 3px solid var(--gold-color);
+}
+
+main > h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px crimson, 0 0 5px var(--blood-color);
+}
+
+main > p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--blood-color);
+}
+
+main ul{
+    list-style: none;
+    padding: 0;
+}
+
+main ul li{
+    float: left;
+    width: 30.33%;
+    margin: 0 1.5%;
+}
+
+main ul li img{
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 7px 7px 5px var(--blood-color);
+}
+
+main ul li h3{
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    color: var(--dark-gold-color);
+}
+
+main section.warning-text{
+    background-color: var(--dark-cream-color);
+    border-top: 3px solid var(--gold-color);
+    border-bottom: 3px solid var(--gold-color);
+}
+
+main section.warning-text p.warning-content{
+    text-align: justify;
+    font-size: 25px;
+    margin: 10px 30px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main section.warning-text p.warning-verse{
+    text-align: right;
+    font-size: 25px;
+    margin: 10px 7% 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main section.warning-text p.accept{
+    background-color: var(--snow-white-color);
+    text-align: center;
+    font-size: 30px;
+    color: var(--blood-color);
+    font-weight: 600;
+    border-top: 3px solid var(--gold-color);
+    padding: 20px 10%;
+    background-color: var(--light-green-color);
+}
+
+
+/* Section Galery */
+button.bible-passion-button{
+    padding: 30px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--blood-color);
+    text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px var(--blue-sky-color);
+    margin: 10px auto 0;
+    display: block;
+    border-radius: 30px;
+    background-color: var(--light-gold-color);
+    box-shadow: 0 9px var(--silver-color);
+}
+
+button.bible-passion-button:hover{
+    background-color: var(--green-color);
+    color: var(--gold-color);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+button.bible-passion-button:active{
+    box-shadow: 0 5px var(--black-silver-color);
+    transform: translateY(4px);
+}
+
+section.bible-passion{
+    display: none;
+}
+
+/* .box-bible-passion{
+    animation-name: bible-passion-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+.box-bible-passion-reverse{
+    animation-name: bible-passion-animation-reverse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+} */
+
+@keyframes bible-passion-animation{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes bible-passion-animation-reverse{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+/* Galery Stories */
+div.galery{
+    float: left;
+    width: 23%;
+    margin: 30px 1%;
+    border: 5px solid var(--blood-color);
+    border-radius: 10px;
+    background-color: var(--dark-cream-color);
+    height: 350px;
+    /* transition: transform 2s 500ms; */
+}
+
+div.galery.resurrection{
+    border: 5px solid var(--dark-blue-color);
+}
+
+div.galery.resurrection.ascends-to-heaven{
+    width: 90%;
+    height: 550px;
+    margin: 30px 5%;
+    border-radius: 40px;
+    border: 5px solid var(--gold-color);
+
+    background-image: url("img/Lord-Jesus-Ascends-To-Heaven-wide.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    position: relative;
+}
+
+div.galery img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+div.galery:hover{
+    border: 5px solid var(--gold-color);
+    /* Neon Box Shadow */
+    box-shadow: crimson 5px 5px 5px;
+    /* transform: rotateY(360deg); */
+    background-image: linear-gradient(to right, var(--gold-color), var(--blood-color), var(--passion-purple-color));
+}
+
+div.galery.resurrection:hover{
+    box-shadow: var(--blue-sky-color) 5px 5px 5px;
+    background-image: linear-gradient(to right, white, var(--blue-sky-color), var(--green-color));
+}
+
+div.galery.resurrection.ascends-to-heaven:hover{
+    background-image: url("img/Lord-Jesus-Ascends-To-Heaven-wide.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    opacity: 0.7;
+}
+
+div.galery a:hover{
+    opacity: 0.5;
+}
+
+div.galery div.desc{
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+div.galery.resurrection.ascends-to-heaven div.desc{
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 900;
+    font-size: 30px;
+    width: 80%;
+}
+
+/* Clear Fix */
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main section.movie{
+    text-align: center;
+    margin: 50px 20px 20px;
+}
+
+main section.movie h2{
+    font-size: 30px;
+}
+
+main section.movie iframe{
+    width: 900px;
+    height: 500px;
+    box-shadow: 7px 7px 5px var(--blood-color);
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+main ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Form */
+section.form-input{
+    padding: 20px;
+    text-align: center;
+    background-color: beige;
+    border-radius: 10px 10px 0 0;
+    margin-top: 10px;
+    border-top: 3px solid var(--dark-cream-color);
+    border-right: 3px solid var(--dark-cream-color);
+    border-left: 3px solid var(--dark-cream-color);
+}
+
+section.form-input h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 0 10px;
+}
+
+section.form-input label, section.form-input input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+section.form-input input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 30%;
+    border: 1px solid var(--gold-color);
+    border-radius: 10px;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--blue-sky-color);
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 0 0 10px 10px;
+    border-left: 3px solid var(--dark-blue-color);
+    border-right: 3px solid var(--dark-blue-color);
+    border-bottom: 3px solid var(--dark-blue-color);
+}
+
+::selection{
+    color: var(--dark-gold-color);
+    background-color: var(--dark-cream-color);
+}
+
+audio{
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 40%;
+    width: 100px;
+    opacity: 0.5;
+    height: 40px;
+    margin-right: 10px;
+    z-index: 3;
+}
+
+audio::-webkit-media-controls-timeline{
+    display: none;
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: var(--gold-color);
+}
+
+audio:hover{
+    width: 150px;
+    opacity: 1;
+}
+
+audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px){
+    div.galery div.desc{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    div.galery{
+        width: 30%;
+        margin: 30px 1.6667%;
+    }
+
+    div.galery div.desc{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    div.galery div.desc{
+        font-size: 14.5px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    /* header */
+    @keyframes animation-header{
+        0%{
+            position: relative;
+            width: 100%;
+            height: fit-content;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+    
+        5%{
+            position: fixed;
+            width: 100%;
+            height: 112.5px;
+            z-index: 2;
+        }
+    
+        10%{
+            position: fixed;
+            width: 100%;
+            height: 187.5px;
+            z-index: 2;
+        }
+    
+        15%{
+            position: fixed;
+            width: 100%;
+            height: 225px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        20%{
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            border-radius: 30%; 
+            border: 10px solid var(--gold-color);
+            background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+            transform: translate(-50%, -50%);
+        }
+    
+        30%, 40%, 50%, 60%, 70%{
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            border-radius: 50%; 
+            border: 10px solid var(--gold-color);
+            background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+            transform: translate(-50%, -50%);
+        }
+    
+        80%{
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            border-radius: 30%; 
+            border: 10px solid var(--gold-color);
+            background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+            transform: translate(-50%, -50%);
+        }
+    
+        85%{
+            position: fixed;
+            width: 100%;
+            height: 225px;
+            z-index: 2;
+        }
+    
+        90%{
+            position: fixed;
+            width: 100%;
+            height: 187.5px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        95%{
+            position: fixed;
+            width: 100%;
+            height: 112.5px;
+            z-index: 2;
+        }
+    
+        100%{
+            position: relative;
+            width: 100%;
+            height: fit-content;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+    }
+
+    header a{
+        font-size: 40px;
+        width: 45%;
+    }
+    
+    header h1{
+        font-size: 30px;
+        width: 55%;
+    }
+
+    /* Galery */
+    div.galery{
+        width: 46%;
+        margin: 30px 2%;
+    }
+
+    div.galery div.desc{
+        font-size: 16px;
+    }
+
+    div.galery.resurrection.ascends-to-heaven{
+        width: 90%;
+        height: 500px;
+        margin: 30px 5%;
+        border-radius: 30px;
+        border: 5px solid var(--gold-color);
+    }
+
+    div.galery.resurrection.ascends-to-heaven div.desc{
+        top: 70%;
+        font-weight: 800;
+        font-size: 25px;
+    }
+
+    /* navigation */
+    nav{
+        top: var(--header-top-res-900px);
+    }
+    
+    nav ul{
+        padding: 0 3%;
+    }
+
+    nav ul li a{
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    nav ul li a.active{
+        border-radius: 0 15x 0 15px;
+    }
+    
+    nav ul li a:hover{
+        border-radius: 15px 0 15px 0;
+    }
+
+    /* main */
+    main h1{
+        font-size: 40px;
+    }
+    
+    main p{
+        font-size: 25px;
+    }
+    
+    main ul li img{
+        box-shadow: 5px 5px 3px var(--blood-color);
+    }
+    
+    main section.warning-text p.warning-content{
+        font-size: 18px;
+        margin: 7px 20px 7px;
+    }
+    
+    main section.warning-text p.warning-verse{
+        font-size: 18px;
+        margin: 7px 5% 7px;
+    }
+
+    main section.warning-text p.accept{
+        font-size: 25px;
+        padding: 15px 7%;
+    }
+    
+    main section.movie{
+        text-align: center;
+        margin: 10px 20px 20px;
+    }
+    
+    main section.movie h2{
+        font-size: 25px;
+    }
+    
+    main section.movie iframe{
+        width: 500px;
+        height: 350px;
+    }
+
+    /* Form */
+    section.form-input{
+        padding: 15px;
+    }
+
+    section.form-input h2{
+        font-size: 20px;
+        margin: 0 0 8px;
+    }
+
+    section.form-input label, section.form-input input{
+        font-size: 15px;
+        display: block;
+        margin: 5px auto;
+    }
+
+    section.form-input input{
+        width: 35%;
+        border-radius: 8px;
+    }
+
+    /* Footer */
+    footer{
+        padding: 8px 0;
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    /* header */
+    @keyframes animation-header{
+        0%{
+            position: relative;
+            width: 100%;
+            height: fit-content;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+    
+        5%{
+            position: fixed;
+            width: 100%;
+            height: 75px;
+            z-index: 2;
+        }
+    
+        10%{
+            position: fixed;
+            width: 100%;
+            height: 125px;
+            z-index: 2;
+        }
+    
+        15%{
+            position: fixed;
+            width: 100%;
+            height: 150px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        20%{
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            border-radius: 30%; 
+            border: 10px solid var(--gold-color);
+            background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+            transform: translate(-50%, -50%);
+        }
+    
+        30%, 40%, 50%, 60%, 70%{
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            border-radius: 50%; 
+            border: 10px solid var(--gold-color);
+            background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+            transform: translate(-50%, -50%);
+        }
+    
+        80%{
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            border-radius: 30%; 
+            border: 10px solid var(--gold-color);
+            background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+            transform: translate(-50%, -50%);
+        }
+    
+        85%{
+            position: fixed;
+            width: 100%;
+            height: 150px;
+            z-index: 2;
+        }
+    
+        90%{
+            position: fixed;
+            width: 100%;
+            height: 125px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        95%{
+            position: fixed;
+            width: 100%;
+            height: 75px;
+            z-index: 2;
+        }
+    
+        100%{
+            position: relative;
+            width: 100%;
+            height: fit-content;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+    }
+
+    header a{
+        font-size: 30px;
+        width: 40%;
+    }
+    
+    header h1{
+        width: 60%;
+        font-size: 20px;
+    }
+
+    /* navigation */
+    nav{
+        top: var(--header-top-res-600px);
+    }
+    
+    nav ul{
+        padding: 0;
+    }
+
+    nav ul li a{
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    nav ul li{
+        float: none;
+        text-align: center;
+    }
+    
+    nav ul li.right{
+        float: none;
+    }
+    
+    nav ul li a.active{
+        border-radius: 0;
+    }
+    
+    nav ul li a:hover{
+        border-radius: 0;
+    }
+
+    /* main */
+    main h1{
+        font-size: 30px;
+    }
+    
+    main p{
+        font-size: 20px;
+    }
+    
+    main ul li{
+        width: 95%;
+        margin: 0 2.5%;
+    }
+
+    main ul li img{
+        box-shadow: 3px 3px 3px var(--blood-color);
+    }
+
+    main section.warning-text p.warning-content{
+        font-size: 15px;
+        margin: 5px 15px 5px;
+    }
+    
+    main section.warning-text p.warning-verse{
+        font-size: 15px;
+        margin: 5px 3% 5px;
+    }
+
+    main section.warning-text p.accept{
+        font-size: 20px;
+        padding: 10px 5%;
+    }
+    
+    main section.movie{
+        margin: 5px 15px 5px;
+    }
+    
+    main section.movie h2{
+        font-size: 20px;
+    }
+    
+    main section.movie iframe{
+        width: 95%;
+        height: 200px;
+        box-shadow: 5px 5px 3px var(--blood-color);
+        border-radius: 20px;
+        max-width: 100%;
+    }
+
+    /* Section Galery */
+    button.bible-passion-button{
+        padding: 15px 15px;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 10px auto 0;
+        border-radius: 20px;
+        box-shadow: 0 7px var(--silver-color);
+    }
+
+    button.bible-passion-button:active{
+        box-shadow: 0 3px var(--black-silver-color);
+        transform: translateY(4px);
+    }
+
+    /* Galery */
+    div.galery{
+        width: 92%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    div.galery.resurrection.ascends-to-heaven{
+        width: 92%;
+        height: 500px;
+        margin-left: 4%;
+        margin-right: 4%;
+        border-radius: 30px;
+        border: 5px solid var(--gold-color);
+    
+        background-image: url("img/Lord-Jesus-Ascends-To-Heaven.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    
+        position: relative;
+    }
+
+    div.galery.resurrection.ascends-to-heaven div.desc{
+        top: 80%;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    div.galery.resurrection.ascends-to-heaven:hover{
+        background-image: url("img/Lord-Jesus-Ascends-To-Heaven.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    
+        opacity: 0.7;
+    }
+
+    /* Form */
+    section.form-input{
+        padding: 10px;
+    }
+
+    section.form-input h2{
+        font-size: 15px;
+        margin: 0 0 8px;
+    }
+
+    section.form-input label, section.form-input input{
+        font-size: 13px;
+    }
+
+    section.form-input input{
+        width: 40%;
+        border-radius: 8px;
+    }
+    
+    /* Footer */
+    footer{
+        padding: 5px 0;
+        font-weight: 400;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    /* Section Galery */
+    button.bible-passion-button{
+        padding: 10px 10px;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 10px 10%;
+        border-radius: 20px;
+        box-shadow: 0 7px var(--silver-color);
+    }
+    
+    button.bible-passion-button:active{
+        box-shadow: 0 3px var(--black-silver-color);
+        transform: translateY(4px);
+    }
+
+    /* Galery */
+    div.galery.resurrection.ascends-to-heaven{
+        height: 400px;
+    }
+
+    div.galery.resurrection.ascends-to-heaven div.desc{
+        top: 65%;
+        font-size: 20px;
+    }
+
+    /* Form */
+    section.form-input input{
+        width: 80%;
+        border-radius: 8px;
+    }
+}

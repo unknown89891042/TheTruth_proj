@@ -1,0 +1,548 @@
+:root{
+    --gold-color: #E5B80B;
+    --dark-gold-color: #B59410;
+    --light-gold-color: #FDDC5C;
+    --silver-color: #BCC6CC;
+    --black-silver-color: #737474;
+    --blue-sky-color: #74C0FC;
+    --blood-color: #8A0303;
+    --red-neon-color: #FF3131;
+    --green-color: #72BF6A;
+    --dark-green-color: #006400;
+    --light-green-color: #90EE90;
+    --snow-white-color: #F5F4EF;
+    --dark-cream-color: #CCC7B3;
+    --dark-blue-color: #00008B;
+    --light-black-color: #2C2D2D;
+    --passion-purple-color: #632958;
+    --header-top: 97px;
+    --header-top-res-900px: 87px;
+    --header-top-res-600px: 74px;
+    /* --header-top-res-900px: 97px;
+    --header-top-res-600px: 97px; */
+}
+
+
+body, h1, h2, h3, h5, p{
+    margin: 0;
+    padding: 10px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--snow-white-color);
+}
+
+
+/* Header */
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    background-color: var(--blue-sky-color);
+    border-radius: 10px 10px 0 0;
+}
+
+header a{
+    width: 43%;
+    text-align: right;
+    font-size: 50px;
+    margin-right: 5%;
+    color: var(--gold-color);
+    text-shadow: white 3px 3px;
+}
+
+header a i{
+    transition: transform 700ms;
+}
+
+header a i:hover{
+    transform: scale(1.5, 1.5);
+}
+
+header h1{
+    width: 57%;
+    color: var(--blood-color);
+    text-shadow: white 3px 3px;
+    font-size: 50px;
+}
+
+/* Navigation */
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: darkcyan;
+    padding: 0 5%;
+    border-radius: 0 0 10px 10px;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--silver-color);
+    font-size: 20px;
+    font-weight: 700;
+    color: lawngreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav ul li.right{
+    float: right;
+}
+
+nav ul li a.active{
+    background-color: var(--silver-color);
+    color: lawngreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-radius: 0 20px 0 20px;
+}
+
+nav ul li a:hover{
+    background-color: var(--gold-color);
+    color: white;
+    border-radius: 20px 0 20px 0;
+}
+
+/* Main */
+main article{
+    padding: 20px;
+    background-color: var(--silver-color);
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+main article h1{
+    font-size: 30px;
+}
+
+main article div.left-side{
+    float: left;
+    width: 70%;
+    padding-right: 20px;
+}
+
+main article div.right-side{
+    float: left;
+    width: 30%;
+}
+
+main article div.right-side.our-Lord{
+    /* Animation for The Holy Cross Image */
+    animation-name: animation-Holy-Cross;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 500ms;
+    animation-direction: alternate;
+}
+
+@keyframes animation-Holy-Cross{
+    0%{
+        z-index: 2;
+        position: relative;
+        left: -50%;
+        top: -150px;
+        transform: translate(50%, 0);
+    }
+
+    50%{
+        z-index: 2;
+        position: relative;
+        left: -35%;
+        transform: scale(1.5, 1.5);
+    }
+
+    100%{
+        z-index: 2;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+}
+
+main article div.right-side img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+main article div.right-side.our-Lord img{
+    box-shadow: 8px 8px 10px var(--blood-color);
+}
+
+main article div.left-side p{
+    margin-top: 2em;
+}
+
+main article div.left-side.our-Lord{
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px crimson, 0 0 5px var(--blood-color);
+}
+
+main article div.left-side.our-Lord p{
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+main article p{
+    font-size: 18px;
+    text-align: justify;
+    max-width: 100%;
+}
+
+/* clearfix hack */
+main article::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Form */
+section.form-input{
+    padding: 20px;
+    text-align: center;
+    background-color: beige;
+    border-radius: 10px 10px 0 0;
+    margin-top: 10px;
+    border-top: 3px solid var(--dark-cream-color);
+    border-right: 3px solid var(--dark-cream-color);
+    border-left: 3px solid var(--dark-cream-color);
+}
+
+section.form-input h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 0 10px;
+}
+
+section.form-input label, section.form-input input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+section.form-input input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 30%;
+    border: 1px solid var(--gold-color);
+    border-radius: 10px;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--blue-sky-color);
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 0 0 10px 10px;
+    border-left: 3px solid var(--dark-blue-color);
+    border-right: 3px solid var(--dark-blue-color);
+    border-bottom: 3px solid var(--dark-blue-color);
+}
+
+::selection{
+    color: var(--gold-color);
+    background-color: var(--snow-white-color);
+}
+
+audio{
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 32%;
+    width: 100px;
+    opacity: 0.5;
+    height: 40px;
+    margin-right: 10px; 
+}
+
+audio::-webkit-media-controls-timeline{
+    display: none;
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: var(--gold-color);
+}
+
+audio:hover{
+    width: 150px;
+    opacity: 1;
+}
+
+audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px){
+    main article div.left-side{
+        width: 60%;
+    }
+
+    main article div.right-side{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    @keyframes animation-Holy-Cross{
+        0%{
+            z-index: 2;
+            position: relative;
+            left: -50%;
+            top: -150px;
+            transform: translate(50%, 0);
+        }
+    
+        50%{
+            z-index: 2;
+            position: relative;
+            left: -25%;
+            transform: scale(1.5, 1.5);
+        }
+    
+        100%{
+            z-index: 2;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    /* header */
+    header a{
+        font-size: 40px;
+        width: 45%;
+    }
+    
+    header h1{
+        font-size: 30px;
+        width: 55%;
+    }
+
+    /* navigation */
+    nav{
+        top: var(--header-top-res-900px);
+    }
+    
+    nav ul{
+        padding: 0 3%;
+    }
+
+    nav ul li a{
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    nav ul li a.active{
+        border-radius: 0 15x 0 15px;
+    }
+    
+    nav ul li a:hover{
+        border-radius: 15px 0 15px 0;
+    }
+
+    /* Main */
+    main article div.left-side.our-Lord{
+        font-size: 1.3em;
+    }
+
+    main article div.left-side{
+        width: 50%;
+    }
+
+    main article div.right-side{
+        width: 50%;
+    }
+
+    @keyframes animation-Holy-Cross{
+        0%{
+            z-index: 2;
+            position: relative;
+            left: -50%;
+            top: -150px;
+            transform: translate(50%, 0);
+        }
+    
+        50%{
+            z-index: 2;
+            position: relative;
+            left: -25%;
+            transform: scale(1.3, 1.3);
+        }
+    
+        100%{
+            z-index: 2;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    main article div.left-side p{
+        margin-top: 10px;
+    }
+
+    /* Form */
+    section.form-input{
+        padding: 15px;
+    }
+
+    section.form-input h2{
+        font-size: 20px;
+        margin: 0 0 8px;
+    }
+
+    section.form-input label, section.form-input input{
+        font-size: 15px;
+        display: block;
+        margin: 5px auto;
+    }
+
+    section.form-input input{
+        width: 35%;
+        border-radius: 8px;
+    }
+
+    /* Footer */
+    footer{
+        padding: 8px 0;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    audio{
+        top: 26%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    /* header */
+    header a{
+        font-size: 30px;
+        width: 40%;
+    }
+    
+    header h1{
+        width: 60%;
+        font-size: 20px;
+    }
+    
+
+    /* navigation */
+    nav{
+        top: var(--header-top-res-600px);
+    }
+    
+    nav ul{
+        padding: 0;
+    }
+
+    nav ul li a{
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    nav ul li{
+        float: none;
+        text-align: center;
+    }
+    
+    nav ul li.right{
+        float: none;
+    }
+    
+    nav ul li a.active{
+        border-radius: 0;
+    }
+    
+    nav ul li a:hover{
+        border-radius: 0;
+    }
+
+    /* main */
+    main article div.left-side.our-Lord{
+        font-size: 1.2em;
+    }
+
+    main article div.left-side, main article div.right-side{
+        float: none;
+        width: 100%;
+    }
+
+    main article div.right-side.our-Lord{
+        animation-duration: 2s;
+    }
+
+    @keyframes animation-Holy-Cross{
+        0%{
+            width: 100%;
+            position: relative;
+            top: -180px;
+        }
+
+        100%{
+            width: 100%;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    /* Form */
+    section.form-input{
+        padding: 10px;
+    }
+
+    section.form-input h2{
+        font-size: 15px;
+        margin: 0 0 8px;
+    }
+
+    section.form-input label, section.form-input input{
+        font-size: 13px;
+    }
+
+    section.form-input input{
+        width: 40%;
+        border-radius: 8px;
+    }
+
+    /* Footer */
+    footer{
+        padding: 5px 0;
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    audio{
+        top: 48%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    /* Form */
+    section.form-input input{
+        width: 80%;
+        border-radius: 8px;
+    }
+
+    /* Main */
+    main article div.left-side.our-Lord{
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,561 @@
+body, h1, h2, p{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --gold-color: #E5B80B;
+    --dark-gold-color: #B59410;
+    --light-gold-color: #FDDC5C;
+    --silver-color: #BCC6CC;
+    --black-silver-color: #737474;
+    --blue-sky-color: #74C0FC;
+    --blood-color: #8A0303;
+    --red-neon-color: #FF3131;
+    --green-color: #72BF6A;
+    --dark-green-color: #006400;
+    --light-green-color: #90EE90;
+    --snow-white-color: #F5F4EF;
+    --dark-cream-color: #CCC7B3;
+    --dark-blue-color: #00008B;
+    --light-black-color: #2C2D2D;
+    --passion-purple-color: #632958;
+    --header-top: 97px;
+    --header-top-res-900px: 87px;
+    --header-top-res-600px: 74px;
+    /* --header-top-res-900px: 97px;
+    --header-top-res-600px: 97px; */
+}
+
+body{
+    margin-top: var(--header-top);
+}
+
+
+/* Header */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    background-color: var(--blue-sky-color);
+}
+
+header a{
+    width: 40%;
+    text-align: right;
+    font-size: 50px;
+    margin-right: 5%;
+    color: var(--gold-color);
+    text-shadow: white 3px 3px;
+}
+
+header a i{
+    transition: transform 700ms;
+}
+
+header a i:hover{
+    transform: scale(1.5, 1.5);
+}
+
+header h1{
+    width: 60%;
+    color: var(--blood-color);
+    text-shadow: white 3px 3px;
+    font-size: 50px;
+}
+
+/* Welcome */
+section.welcome{
+    position: relative;
+    background-color: #3B4340;
+}
+
+section.welcome img{
+    width: 100%;
+}
+
+section.welcome p{
+    position: absolute;
+    bottom: 15%;
+    background-color: var(--gold-color);
+    font-size: 0px;
+    color: white;
+    padding: 20px 20px 20px 50px;
+    border-radius: 0 10px 10px 0;
+    height: 35px;
+    background-image: url("../icons/arrow-right-solid.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    transition: font-size 1s, border-radius 1s;
+    display: flex;
+    align-items: center;
+}
+
+section.welcome p:hover{
+    background-image: none;
+    font-size: 30px;
+    border-radius: 0 20px 20px 0;
+}
+
+/* Navigation */
+nav{
+    position: sticky;
+    top: var(--header-top);
+    z-index: 2;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: darkcyan;
+    padding: 0 5%;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--silver-color);
+    font-size: 20px;
+    font-weight: 700;
+    color: lawngreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav ul li.right{
+    float: right;
+}
+
+nav ul li a.active{
+    background-color: var(--silver-color);
+    color: lawngreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-radius: 0 20px 0 20px;
+}
+
+nav ul li a:hover{
+    background-color: var(--gold-color);
+    color: white;
+    border-radius: 20px 0 20px 0;
+}
+
+/* Main */
+main{
+    margin: 80px 0;
+    padding: 0 80px;
+}
+
+main h2{
+    margin: 0 0 20px;
+    font-size: 40px;
+    color: darkgreen;
+}
+
+main p{
+    font-size: 25px;
+    line-height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin: 30px;
+    padding: 20px;
+    border: 3px solid var(--silver-color);
+    color: navy;
+    background-color: var(--gold-color);
+    font-weight: bolder;
+    border-radius: 30px;
+    box-shadow: var(--silver-color) 15px 15px;
+}
+
+main p.book-name{
+    text-align: right;
+    padding-right: 4%;
+}
+
+main ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+main ul li{
+    width: 45%;
+    height: 100%;
+    margin: 5% 5% 0;
+}
+
+main ul li img{
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: #8A0303 10px 10px 10px;
+    display: block;
+    margin: auto;
+}
+
+main > img{
+    width: 90%; 
+    margin: 5% auto; 
+    display: block; 
+    border-radius: 20px;
+    box-shadow: #8A0303 10px 10px 10px;
+}
+
+/* Form */
+section.form-input{
+    padding: 20px;
+    text-align: center;
+    background-color: var(--gold-color);
+}
+
+section.form-input h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 0 10px;
+}
+
+section.form-input label, section.form-input input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+section.form-input input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 30%;
+    border: 1px solid var(--gold-color);
+    border-radius: 10px;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--blue-sky-color);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+::selection{
+    color: crimson;
+    background-color: var(--gold-color);
+}
+
+audio{
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 40%;
+    width: 100px;
+    opacity: 0.5;
+    height: 40px;
+    z-index: 3;
+}
+
+audio::-webkit-media-controls-timeline{
+    display: none;
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: var(--gold-color);
+}
+
+audio:hover{
+    width: 150px;
+    opacity: 1;
+}
+
+audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display{
+    display: none;
+}
+
+@media screen and (max-width: 900px){
+    body{
+        margin-top: var(--header-top-res-900px);
+    }
+
+    /* header */
+    header a{
+        font-size: 40px;
+        width: 35%;
+    }
+    
+    header h1{
+        font-size: 30px;
+        width: 65%;
+    }
+
+    /* welcome */
+    section.welcome p{
+        height: 25px;
+        background-size: 60%;
+        padding: 10px 10px 10px 25px;
+        border-radius: 0 5px 5px 0;
+    }
+
+    section.welcome p:hover{
+        font-size: 20px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    /* navigation */
+    nav{
+        top: var(--header-top-res-900px);
+    }
+    
+    nav ul{
+        padding: 0 3%;
+    }
+
+    nav ul li a{
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    nav ul li a.active{
+        border-radius: 0 15x 0 15px;
+    }
+    
+    nav ul li a:hover{
+        border-radius: 15px 0 15px 0;
+    }
+
+    /* main */
+    main{
+        margin: 50px 0;
+        padding: 0 50px;
+    }
+    
+    main h2{
+        margin: 0 0 15px;
+        font-size: 30px;
+    }
+    
+    main p{
+        font-size: 18px;
+        line-height: 30px;
+        margin: 20px;
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: var(--silver-color) 10px 10px;
+    }
+    
+    main ul li{
+        width: 48%;
+        margin: 2% 2% 0;
+    }
+    
+    main ul li img, main > img{
+        border-radius: 15px;
+        box-shadow: #8A0303 8px 8px 10px;
+    }
+
+    /* Form */
+    section.form-input{
+        padding: 15px;
+    }
+
+    section.form-input h2{
+        font-size: 20px;
+        margin: 0 0 8px;
+    }
+
+    section.form-input label, section.form-input input{
+        font-size: 15px;
+        display: block;
+        margin: 5px auto;
+    }
+
+    section.form-input input{
+        width: 35%;
+        border-radius: 8px;
+    }
+
+    /* Footer */
+    footer{
+        padding: 8px 0;
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        margin-top: var(--header-top-res-600px);
+    }
+
+    /* header */
+    header a{
+        font-size: 30px;
+        width: 35%;
+    }
+    
+    header h1{
+        width: 65%;
+        font-size: 20px;
+    }
+
+    /* welcome */
+    section.welcome p{
+        height: 35px;
+        padding: 8px 8px 8px 20px;
+        background-size: 60%;
+        border-radius: 0 4px 4px 0;
+    }
+
+    section.welcome p:hover{
+        font-size: 15px;
+        border-radius: 0 8px 8px 0;
+    }
+
+    /* navigation */
+    nav{
+        top: var(--header-top-res-600px);
+    }
+    
+    nav ul{
+        padding: 0;
+    }
+
+    nav ul li a{
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    nav ul li{
+        /* float: none; */
+        width: 50%;
+        text-align: center;
+        border-bottom: 2px solid var(--green-color);
+    }
+
+    nav ul li a{
+        border-right: 2px solid var(--green-color);
+    }
+
+    nav ul li a[href="index.html"], nav ul li a[href="Lord-Teaching.html"], nav ul li a[href="about-us.html"]{
+        border-left: 2px solid var(--green-color);
+    }
+
+    nav ul li a[href="index.html"], nav ul li a[href="Lord-Miracles.html"]{
+        border-top: 2px solid var(--green-color);
+    }
+    
+    nav ul li.right{
+        /* float: none; */
+        width: 100%;
+    }
+    
+    nav ul li a.active{
+        border-radius: 0;
+    }
+    
+    nav ul li a:hover{
+        border-radius: 0;
+    }
+
+    /* main */
+    main{
+        margin: 80px 0 30px;
+        padding: 0 30px;
+    }
+    
+    main h2{
+        margin: 0 0 10px;
+        font-size: 20px;
+    }
+    
+    main p{
+        font-size: 13px;
+        line-height: 25px;
+        margin: 15px;
+        padding: 12px;
+        border-radius: 15px;
+        box-shadow: var(--silver-color) 8px 8px;
+    }
+    
+    main ul{
+        display: block;
+    }
+    
+    main ul li{
+        width: 90%;
+        margin: 3% auto;
+    }
+    
+    main ul li img, main > img{
+        border-radius: 10px;
+        box-shadow: #8A0303 3px 3px 10px;
+    }
+
+    /* Form */
+    section.form-input{
+        padding: 10px;
+    }
+
+    section.form-input h2{
+        font-size: 15px;
+        margin: 0 0 8px;
+    }
+
+    section.form-input label, section.form-input input{
+        font-size: 13px;
+    }
+
+    section.form-input input{
+        width: 50%;
+        border-radius: 8px;
+    }
+
+    /* Footer */
+    footer{
+        padding: 5px 0;
+        font-weight: 400;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    /* header */
+    header a{
+        font-size: 30px;
+        width: 30%;
+    }
+    
+    header h1{
+        width: 70%;
+        font-size: 20px;
+    }
+
+    /* Form */
+    section.form-input input{
+        width: 80%;
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    /* header */
+    header a{
+        font-size: 30px;
+        width: 25%;
+    }
+    
+    header h1{
+        width: 75%;
+        font-size: 20px;
+    }
+}

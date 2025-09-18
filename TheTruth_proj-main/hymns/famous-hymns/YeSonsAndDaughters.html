@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>
+            The Truth
+        </title>
+        <link rel="stylesheet" href="../styles-Hymn.css">
+        <link rel="icon" href="../../icons/cross-solid.svg">
+        <script src="https://kit.fontawesome.com/b13e7528ce.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var check_play = 0;
+            function play() {
+                var audio = document.getElementById("audio");
+                var image = document.getElementById("disk-animation");
+                const button = document.querySelector("button");
+                image.classList.toggle("image-animation-360deg");
+                if (check_play == 0) {
+                    check_play = 1;
+                    button.innerHTML = "Pause";
+                    audio.play();
+                } else {
+                    check_play = 0;
+                    button.innerHTML = "Play &#187;";
+                    audio.pause();        
+                }
+
+                audio.onended = function() {
+                    check_play = 0;
+                    button.innerHTML = "Play";
+                    image.classList.toggle("image-animation-360deg");
+                };
+            }
+        </script>
+
+        <header>
+            <a href="../../index.html">
+                <i class="fa-solid fa-cross"></i>
+            </a>
+            <h1>
+                The Truth
+            </h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Lord-Miracles.html">Miracles</a></li>
+                <li><a href="../../Lord-Teaching.html">Teaching</a></li>
+                <li><a href="../../Hymn.html" class="active">Hymn</a></li>
+                <li class="right"><a href="../../about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="library">
+                <h1>Library</h1>
+                <article class="library-famous-hymns">
+                    <h2>1. Famous Hymn</h2>
+                    <a href="SilentNight.html">Silent Night</a>
+                    <a href="SheepMaySafelyGraze.html">Sheep May Safely Graze</a>
+                    <a href="VeniVeniEmmanuel.html">Veni Veni Emmanuel</a>
+                    <a href="JesuJoyOfMansDesiring.html">Jesu, Joy Of Man's Desiring</a>
+                    <a href="YeSonsAndDaughters.html">Ye Sons And Daughters</a>
+                </article>
+                <article class="library-our-composed-hymns">
+                    <h2>2. Our Composed Hymn</h2>
+                    <a href="SilentNight.html">Silent Night</a>
+                    <a href="SheepMaySafelyGraze.html">Sheep May Safely Graze</a>
+                    <a href="VeniVeniEmmanuel.html">Veni Veni Emmanuel</a>
+                    <a href="JesuJoyOfMansDesiring.html">Jesu, Joy Of Man's Desiring</a>
+                    <a href="YeSonsAndDaughters.html">Ye Sons And Daughters</a>
+                </article>
+            </section>
+            <section class="hymns">
+                <h1>Ye Sons And Daughters</h1>
+                <article class="hymn-running">
+                    <img id="disk-animation" src="../img/disk.png" alt="disk-image">
+                    <article class="hymn-running-playing">
+                        <button type="button" class="button-playing" onclick="play()" id="button"><span>Play</span></button>
+                        <audio id="audio" controls controlsList="nodownload noplaybackrate">
+                            <source src="../audios/YeSonsAndDaughters.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </article>
+                </article>
+                <article class="hymn-information">
+                    <h2>Composer: <span>Franciscan friar Jean Tisserand</span></h2>
+                    <h2>Singer / Orchestra / Band: <span>Christendom College Choir and Schola Gregoriana</span></h2>
+                    <h2 class="title-tooltip">
+                        Source: <span><a href="https://www.youtube.com/watch?v=V1IoWqxxJ7U">- Ye Sons and Daughters (O Filii et Filiae) -</a></span>
+                        <p class="title-tooltip-text">Visit site</p>
+                    </h2>
+                </article>
+            </section>
+        </main>
+
+        <section class="form-input">
+            <h2>Thank you for your visiting!</h2>
+            <form action="">
+                <label for="email">Type your email and hit Enter to join us: </label>
+                <input type="email" id="email" name="email" placeholder="your email ...">
+            </form>
+        </section>
+
+        <footer>
+            &copy;2024 Copyright Nguyen Van Huy. All rights reserved.
+        </footer>
+    </body>
+</html>
